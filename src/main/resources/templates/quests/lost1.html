@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>You Lost</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Поражение</h1>
+<p>Ты отклонил вызов</p>
+
+<form action="/" method="get">
+    <button type="submit">Начать сначала</button>
+</form>
+<footer>
+    <hr>
+    <p>Имя игрока: <span th:text="${playerInfo.name}"></span></p>
+    <p>IP: <span th:text="${playerInfo.ip}"></span></p>
+    <p>Игр сыграно: <span th:text="${playerInfo.gamesPlayed}"></span></p>
+</footer>
+</body>
+</html>

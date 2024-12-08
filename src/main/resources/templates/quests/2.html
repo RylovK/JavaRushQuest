@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Quest Step 2</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Ты принял вызов</h1>
+<p>Поднимаешься на мостик к капитану?</p>
+
+<form action="/quests/3" method="get">
+    <button type="submit">Подняться на мостик</button>
+</form>
+<form action="/quests/lost2" method="get">
+    <button type="submit">Отказаться подниматься на мостик</button>
+</form>
+
+<footer>
+    <hr>
+    <p>Имя игрока: <span th:text="${playerInfo.name}"></span></p>
+    <p>IP: <span th:text="${playerInfo.ip}"></span></p>
+    <p>Игр сыграно: <span th:text="${playerInfo.gamesPlayed}"></span></p>
+</footer>
+</body>
+</html>

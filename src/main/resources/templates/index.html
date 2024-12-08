@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <title>Text Quest</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Welcome to the Quest!</h1>
+
+<p>Ты стоишь в космическом порту и готов подняться на борт своего корябля.
+Разве ты не об этом мечтал?</p>
+
+<p>Стать капитаном галактического судна с экипажем, который будет совершать подвиги
+    под твоим командованием.</p>
+
+<p>Так что вперед!</p>
+
+<form action="/start" method="post">
+    <label for="playerName">Введи своё имя:</label>
+    <input type="text" id="playerName" name="playerName" required>
+    <button type="submit">Начать путешествие</button>
+</form>
+</body>
+</html>
